@@ -1,0 +1,1255 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		 <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+		<title>Dog Grooming - Ray Pet Ventures</title>
+
+		<!-- Google font -->
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
+
+		<!-- Bootstrap -->
+		<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css"/>
+
+		<!-- Slick -->
+		<link type="text/css" rel="stylesheet" href="css/slick.css"/>
+		<link type="text/css" rel="stylesheet" href="css/slick-theme.css"/>
+
+		<!-- nouislider -->
+		<link type="text/css" rel="stylesheet" href="css/nouislider.min.css"/>
+
+		<!-- Font Awesome Icon -->
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<!-- Custom stlylesheet -->
+		<link type="text/css" rel="stylesheet" href="css/style.css"/>
+
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+
+		<script>
+				function includeHTML() {
+				  var z, i, elmnt, file, xhttp;
+				  /* Loop through a collection of all HTML elements: */
+				  z = document.getElementsByTagName("*");
+				  for (i = 0; i < z.length; i++) {
+				    elmnt = z[i];
+				    /*search for elements with a certain atrribute:*/
+				    file = elmnt.getAttribute("w3-include-html");
+				    if (file) {
+				      /* Make an HTTP request using the attribute value as the file name: */
+				      xhttp = new XMLHttpRequest();
+				      xhttp.onreadystatechange = function() {
+				        if (this.readyState == 4) {
+				          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+				          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+				          /* Remove the attribute, and call this function once more: */
+				          elmnt.removeAttribute("w3-include-html");
+				          includeHTML();
+				        }
+				      }
+				      xhttp.open("GET", file, true);
+				      xhttp.send();
+				      /* Exit the function: */
+				      return;
+				    }
+				  }
+				}
+		</script>
+		<style media="screen">
+		.category-background{
+			background-position: center;
+			opacity: 0.9;
+			filter: alpha(opacity=50);
+			width: 80%;
+			background: rgb(201,201,201)!important;
+			border-radius: 5px;
+		}
+		#phone-category{
+			display: none;
+		}
+
+		@media only screen and (max-width: 999px){
+			#phone-category{
+				display: block;
+			}
+			.bigscreen-category{
+				display: none;
+			}
+		}
+		#cat-phone{
+
+		}
+		#cat-phone li{
+			border-bottom: 1px solid #000;
+		}
+		#cat-phone li a{
+		}
+		#cat-phone li a:hover{
+			color: black!important;
+		}
+		html{
+			scroll-behavior: smooth;
+		}
+		.affix {
+				top: 10px;
+				z-index: 9999 !important;
+				padding: 5px 8px;
+				left: 15px;
+		}
+
+		#dogfood-cat{
+			background: rgba(0,0,0,0.2);
+		}
+		.aside ul a{
+		}
+		.dog-shop ul{
+			font-size: 90%;
+		}
+		.dropdown-categories{
+			display: none;
+		}
+
+		@media only screen and (min-width: 1020px) {
+			.affix {
+					padding: 5px 8px;
+			}
+		}
+		@media only screen and (max-width: 400px) {
+			.affix {
+
+			}
+
+			#topselling-aside{
+				display: none;
+			}
+			.dropdown-categories{
+				display: block;
+
+			}
+		}
+		</style>
+
+	</head>
+
+
+	<body data-spy="scroll" data-target=".navbar" data-offset="50">
+		<div w3-include-html="inc/headerNav.html">
+
+		</div>
+
+		<!-- BREADCRUMB -->
+		<div id="breadcrumb" class="section">
+
+			<!-- container -->
+			<div class="container">
+				<!-- row -->
+				<div class="row">
+					<div class="col-md-12">
+						<ul class="breadcrumb-tree">
+							<li><a href="index.html">Home</a></li>
+							<li class="active">Dog Grooming</li>
+						</ul>
+					</div>
+				</div>
+				<!-- /row -->
+
+			</div>
+			<!-- /container -->
+		</div>
+		<!-- /BREADCRUMB -->
+
+
+
+		<!-- SECTION -->
+		<div class="section">
+			<!-- container -->
+			<div class="container">
+				<!-- row -->
+				<div class="row">
+					<!-- ASIDE -->
+					<div id="aside" class="col-md-3 pet-shop-cat">
+						<!-- aside Widget  CATEORIES-->
+						<div data-spy="affix" data-offset-top="320">
+							<button  type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo1" id="phone-category"> Categories <i class="fa fa-angle-down"></i></button>
+						</div>
+						<br>
+						<div id="demo1" class="collapse category-background" data-spy="affix" data-offset-top="205" style="margin-top: 40px; border: 1px solid grey;">
+							<br>
+							<ul class="nav nav-pills nav-stacked" id="cat-phone">
+								<li class="collapse" data-toggle="collapse" data-target="#demo1"><a href="#dryfood">DOG GROOMING AND CARE <span class="label label-success">12</span></a></li>
+
+							</ul>
+						</div>
+
+						<!-- /aside Widget CATEORIES-->
+
+
+						<!-- aside Widget -->
+						<div class="aside" id="topselling-aside">
+							<h3 class="aside-title">Top selling</h3>
+						<!--
+							<div class="product-widget">
+								<div class="product-img">
+									<img src="./img/product01.png" alt="">
+								</div>
+								<div class="product-body">
+									<p class="product-category">Dog Food</p>
+									<h3 class="product-name"><a href="#">Puppy Food</a></h3>
+									<h4 class="product-price">Ghc980.00 <del class="product-old-price">Ghc990.00</del></h4>
+								</div>
+							</div>
+
+							<div class="product-widget">
+								<div class="product-img">
+									<img src="./img/product02.png" alt="">
+								</div>
+								<div class="product-body">
+									<p class="product-category">Dog Accessories</p>
+									<h3 class="product-name"><a href="#">Dog Cage</a></h3>
+									<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+								</div>
+							</div>
+
+							<div class="product-widget" >
+								<div class="product-img">
+									<img src="./img/product03.png" alt="">
+								</div>
+								<div class="product-body">
+									<p class="product-category">Dog Food</p>
+									<h3 class="product-name"><a href="#">High Energy</a></h3>
+									<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+								</div>
+							</div>
+						-->
+						</div>
+						<!-- /aside Widget -->
+					</div>
+					<!-- /ASIDE -->
+
+					<!-- STORE -->
+					<div id="store" class="col-md-9">
+
+<!---------- Small screen category -------------------------------------------->
+					<!--	<div class="container dropdown-categories">
+							<div class="dropdown" data-spy="affix" data-offset-top="805" style="width: 90%;">
+							  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" style="float: left">
+							    Categories
+							    <span class="caret"></span>
+							  </button>
+							  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+									<ul class="nav nav-pills nav-stacked" >
+													<li class="active"><a href="#dryfood">DRY DOG FOOD <span class="label label-default" style="background: #000;">6</span></a></li>
+													<li><a href="#wetfood">WET DOG FOOD <span class="label label-default" style="background: #000;">3</span></a></li>
+													<li><a href="#dogtreat-dogbone"> DOG TREATS AND DOG BONES <span class="label label-default" style="background: #000;">0</span></a></li>
+													<li><a href="#dogvitamins-supplements"> DOG VITAMINS AND SUPPLEMENTS <span class="label label-default" style="background: #000;">5</span></a></li>
+													<li><a href="#dogbed-baskets"> DOG BEDS AND BASKETS <span class="label label-default" style="background: #000;">0</span></a></li>
+													<li><a href="#dogleads-collars"> DOG LEADS AND COLLARS <span class="label label-default" style="background: #000;">1</span></a></li>
+													<li><a href="#dogtoys-accessories"> DOG TOYS AND ACCESSORIES <span class="label label-default" style="background: #000;">20</span></a></li>
+													<li><a href="#dogbowls-feeders"> DOG BOWLS AND FEEDERS <span class="label label-default" style="background: #000;">0</span></a></li>
+													<li><a href="#dogcrates-travel"> DOG CRATES AND TRAVEL <span class="label label-default" style="background: #000;">5</span></a></li>
+													<li><a href="#puppyproducts"> PUPPY PRODUCTS <span class="label label-default" style="background: #000;">1</span></a></li>
+									</ul>
+							    <li role="separator" class="divider"></li>
+							    <li><a href="#">Separated link</a></li>
+							  </ul>
+							</div>
+
+						</div> -->
+<!-----------/small screen category -------------------------------------------->
+
+
+
+	<!--*******************************************************************************************
+								DOG GROOMING AND CARE SECTION
+	***************************************************************************************************-->
+						<!-- store products For Dry dog food -->
+						<div class="row" id="dryfood">
+							<div class="cat-bg-color">
+								<hr class="category-rule">
+								<h5 class="category-name">Dog Grooming and Care Category <span class="label label-default">12</span></h5>
+								<hr class="category-rule">
+							</div>
+
+
+							<!-- product for CAT BRUST 7" ** -->
+							<div class="col-md-4 col-xs-6">
+								<div class="product">
+									<div class="product-img">
+										<img src="./img/product-catbrush7.png" alt="">
+
+										<div class="product-label">
+											<span class="new">NEW</span>
+										</div>
+									</div>
+									<div class="product-body">
+										<p class="product-category">Dog Grooming and Care</p>
+										<h3 class="product-name"><a href="catbrush7.htm">Cat Brush (7")</a></h3>
+										<h4 class="product-price">&#8373;15.00 </h4>
+										<div class="product-rating">
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+										</div>
+										<div class="product-btns">
+											<button class="add-to-compare"><i><small></small></i></button>
+										</div>
+									</div>
+									<div class="add-to-cart">
+										<a href="catbrush7.htm"><button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> Buy</button></a>
+
+									</div>
+								</div>
+							</div>
+							<!-- /product for CAT BRUST 7"-->
+
+							<!-- product for DOUBLE SIDED WOOD BRUSHES -->
+							<div class="col-md-4 col-xs-6">
+								<div class="product">
+									<div class="product-img">
+										<img src="./img/product-doublesidedwoodbrushes.png" alt="">
+										<div class="product-label">
+											<span class="new">NEW</span>
+										</div>
+									</div>
+									<div class="product-body">
+										<p class="product-category">DOG GROOMING AND CARE </p>
+										<h3 class="product-name"><a href="doublesidedwoodbrushes.htm">DOUBLE SIDED WOOD BRUSHES</a></h3>
+										<button data-toggle="collapse" data-target="#doublesidedwoodbrushes" class="btn btn-danger">View Sizes & Prices</button>
+
+										<div id="doublesidedwoodbrushes" class="collapse">
+											<div class="list-group">
+												<a href="#" class="list-group-item disabled">Small:  <h6 class="product-price">&#8373;25.00</h6></a>
+												<a href="#" class="list-group-item">Medium:  <h6 class="product-price">&#8373;30.00</h6></a>
+												<a href="#" class="list-group-item">Large:  <h6 class="product-price">&#8373;35.00</h6></a>
+											</div>
+
+										</div>
+										<div class="product-rating">
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star-o"></i>
+										</div>
+										<div class="product-btns">
+											<button class="add-to-compare"><i><small></small></i></button>
+										</div>
+									</div>
+									<div class="add-to-cart">
+										<a href="doublesidedwoodbrushes.htm"><button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> Buy</button></a>
+									</div>
+								</div>
+							</div>
+							<!-- /product end for DOUBLE SIDED WOOD BRUSHES -->
+
+							<div class="clearfix visible-sm visible-xs"></div>
+
+							<!-- product for GUILLOTINE CLIPPER -->
+							<div class="col-md-4 col-xs-6">
+								<div class="product">
+									<div class="product-img">
+										<img src="./img/product-guillotineclipper.png" alt="">
+										<div class="product-label">
+											<span class="new">NEW</span>
+										</div>
+									</div>
+									<div class="product-body">
+										<p class="product-category">DOG GROOMING AND CARE </p>
+										<h3 class="product-name"><a href="guillotineclipper.htm">GUILLOTINE CLIPPER</a></h3>
+										<h4 class="product-price">&#8373;35.00</h4>
+										<div class="product-rating">
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star-o"></i>
+										</div>
+										<div class="product-btns">
+											<button class="add-to-compare"><i><small></small></i></button>
+										</div>
+									</div>
+									<div class="add-to-cart">
+										<a href="guillotineclipper.htm"><button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> Buy</button></a>
+									</div>
+								</div>
+							</div>
+							<!-- /product end for GUILLOTINE CLIPPER -->
+
+							<div class="clearfix visible-lg visible-md"></div>
+
+							<!-- product for PET LINT ROLLER-->
+							<div class="col-md-4 col-xs-6">
+								<div class="product">
+									<div class="product-img">
+										<img src="./img/product-petlintroller.png" alt="">
+										<div class="product-label">
+											<span class="new">NEW</span>
+										</div>
+									</div>
+									<div class="product-body">
+										<p class="product-category">DOG GROOMING AND CARE </p>
+										<h3 class="product-name"><a href="petlintroller.htm">PET LINT ROLLER</a></h3>
+										<h4 class="product-price">&#8373;20.00</h4>
+										<div class="product-rating">
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star-o"></i>
+										</div>
+										<div class="product-btns">
+											<button class="add-to-compare"><i><small></small></i></button>
+										</div>
+									</div>
+									<div class="add-to-cart">
+										<a href="petlintroller.htm"><button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> Buy</button></a>
+									</div>
+								</div>
+							</div>
+							<!-- /product end for PET LINT ROLLER-->
+
+							<div class="clearfix visible-sm visible-xs"></div>
+
+							<!-- product for SOFT PROTECTION SALON GROOMING SCISSORS-->
+							<div class="col-md-4 col-xs-6">
+								<div class="product">
+									<div class="product-img">
+										<img src="./img/product-softprotectionsalongroomingscissors.png" alt="">
+										<div class="product-label">
+											<span class="new">NEW</span>
+										</div>
+									</div>
+									<div class="product-body">
+										<p class="product-category">DOG GROOMING AND CARE </p>
+										<h3 class="product-name"><a href="softprotectionsalongroomingscissors.htm">GROOMING SCISSORS <small>Soft Protection Salon</small></a></h3>
+										<h4 class="product-price">&#8373;60.00 </h4>
+										<div class="product-rating">
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star-o"></i>
+										</div>
+										<div class="product-btns">
+											<button class="add-to-compare"><i><small></small></i></button>
+										</div>
+									</div>
+									<div class="add-to-cart">
+										<a href="softprotectionsalongroomingscissors.htm"><button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> Buy</button></a>
+									</div>
+								</div>
+							</div>
+							<!-- /product end for SOFT PROTECTION SALON GROOMING SCISSORS-->
+
+							<!-- product for GROOMING EAR OR FACE SCISSORS-->
+							<div class="col-md-4 col-xs-6">
+								<div class="product">
+									<div class="product-img">
+										<img src="./img/product-groomingearorfacescissors.png" alt="">
+										<div class="product-label">
+											<span class="new">NEW</span>
+										</div>
+									</div>
+									<div class="product-body">
+										<p class="product-category">DOG GROOMING AND CARE </p>
+										<h3 class="product-name"><a href="groomingearorfacescissors.htm">GROOMING EAR/FACE SCISSORS <small></small></a></h3>
+										<h4 class="product-price">&#8373;50.00 </h4>
+										<div class="product-rating">
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star-o"></i>
+										</div>
+										<div class="product-btns">
+											<button class="add-to-compare"><i><small></small></i></button>
+										</div>
+									</div>
+									<div class="add-to-cart">
+										<a href="groomingearorfacescissors.htm"><button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> Buy</button></a>
+									</div>
+								</div>
+							</div>
+							<!-- /product end for GROOMING EAR OR FACE SCISSORS-->
+
+							<div class="clearfix visible-lg visible-md visible-sm visible-xs"></div>
+
+							<!-- product for MEDIUM FLEA COMB-->
+							<div class="col-md-4 col-xs-6">
+								<div class="product">
+									<div class="product-img">
+										<img src="./img/product-mediumfleacomb.png" alt="">
+										<div class="product-label">
+											<span class="new">NEW</span>
+										</div>
+									</div>
+									<div class="product-body">
+										<p class="product-category">DOG GROOMING AND CARE </p>
+										<h3 class="product-name"><a href="mediumfleacomb.htm">FLEA COMB <small>, MEDIUM</small></a></h3>
+										<h4 class="product-price">&#8373;30.00 </h4>
+										<div class="product-rating">
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star-o"></i>
+										</div>
+										<div class="product-btns">
+											<button class="add-to-compare"><i><small></small></i></button>
+										</div>
+									</div>
+									<div class="add-to-cart">
+										<a href="mediumfleacomb.htm"><button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> Buy</button></a>
+									</div>
+								</div>
+							</div>
+							<!-- /product end for MEDIUM FLEA COMB-->
+
+
+							<!-- product for SOFT PROTECTION TICK REMOVER-->
+							<div class="col-md-4 col-xs-6">
+								<div class="product">
+									<div class="product-img">
+										<img src="./img/product-softprotectiontickremover.png" alt="">
+										<div class="product-label">
+											<span class="new">NEW</span>
+										</div>
+									</div>
+									<div class="product-body">
+										<p class="product-category">DOG GROOMING AND CARE </p>
+										<h3 class="product-name"><a href="softprotectiontickremover.htm">SOFT PROTECTION TICK REMOVER <small></small></a></h3>
+										<h4 class="product-price">&#8373;25.00</h4>
+										<div class="product-rating">
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star-o"></i>
+										</div>
+										<div class="product-btns">
+											<button class="add-to-compare"><i><small></small></i></button>
+										</div>
+									</div>
+									<div class="add-to-cart">
+										<a href="softprotectiontickremover.htm"><button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> Buy</button></a>
+									</div>
+								</div>
+							</div>
+							<!-- /product end for SOFT PROTECTION TICK REMOVER-->
+
+							<div class="clearfix visible-sm visible-xs"></div>
+
+							<!-- product for SOFT PROTECTION de-matting comb-->
+							<div class="col-md-4 col-xs-6">
+								<div class="product">
+									<div class="product-img">
+										<img src="./img/product-softprotectiondemattingcomb.png" alt="">
+										<div class="product-label">
+											<span class="new">NEW</span>
+										</div>
+									</div>
+									<div class="product-body">
+										<p class="product-category">DOG GROOMING AND CARE </p>
+										<h3 class="product-name"><a href="softprotectiondemattingcomb.htm">SOFT PROTECTION DE-MATTING COMB <small></small></a></h3>
+										<h4 class="product-price">&#8373;60.00 </h4>
+										<div class="product-rating">
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star-o"></i>
+										</div>
+										<div class="product-btns">
+											<button class="add-to-compare"><i><small></small></i></button>
+										</div>
+									</div>
+									<div class="add-to-cart">
+										<a href="softprotectiondemattingcomb.htm"><button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> Buy</button></a>
+									</div>
+								</div>
+							</div>
+							<!-- /product end for SOFT PROTECTION de-matting comb-->
+
+							<div class="clearfix visible-lg visible-md"></div>
+
+							<!-- product for SOFT PROTECTION de UNDERCOAT RAKE COMB SMALL-->
+							<div class="col-md-4 col-xs-6">
+								<div class="product">
+									<div class="product-img">
+										<img src="./img/product-softprotectionundercoatrakecombsmall.png" alt="">
+										<div class="product-label">
+											<span class="new">NEW</span>
+										</div>
+									</div>
+									<div class="product-body">
+										<p class="product-category">DOG GROOMING AND CARE </p>
+										<h3 class="product-name"><a href="softprotectionundercoatrakecombsmall.htm">SOFT PROTECTION UNDERCOAT RAKE COMB <small>SMALL</small></a></h3>
+										<button data-toggle="collapse" data-target="#rakecomb" class="btn btn-danger">View Sizes & Prices</button>
+
+										<div id="rakecomb" class="collapse">
+											<div class="list-group">
+												<a href="#" class="list-group-item disabled">Small: <h6 class="product-price">&#8373;60.00</h6></a>
+												<a href="#" class="list-group-item">Large: <h6 class="product-price">&#8373;75.00</h6></a>
+											</div>
+
+										</div>
+										<div class="product-rating">
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star-o"></i>
+										</div>
+										<div class="product-btns">
+											<button class="add-to-compare"><i><small></small></i></button>
+										</div>
+									</div>
+									<div class="add-to-cart">
+										<a href="softprotectionundercoatrakecombsmall.htm"><button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> Buy</button></a>
+									</div>
+								</div>
+							</div>
+							<!-- /product end for SOFT PROTECTION de UNDERCOAT RAKE COMB SMALL-->
+
+							<div class="clearfix visible-sm visible-xs"></div>
+							<!-- product for TROPICLEAN NATURAL FLEA AND TICK FOR PETS-->
+							<div class="col-md-4 col-xs-6">
+								<div class="product">
+									<div class="product-img">
+										<img src="./img/product-tropicleanfleaandticksprayforpets.png" alt="">
+										<div class="product-label">
+											<span class="new">NEW</span>
+										</div>
+									</div>
+									<div class="product-body">
+										<p class="product-category">DOG GROOMING AND CARE </p>
+										<h3 class="product-name"><a href="tropicleanfleaandticksprayforpets.htm">TROPICLEAN FLEA AND TICK SPRAY FOR PETS <small></small></a></h3>
+										<h4 class="product-price">&#8373;60.00</h4>
+										<div class="product-rating">
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star-o"></i>
+										</div>
+										<div class="product-btns">
+											<button class="add-to-compare"><i><small>473ml</small></i></button>
+										</div>
+									</div>
+									<div class="add-to-cart">
+										<a href="tropicleanfleaandticksprayforpets.htm"><button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> Buy</button></a>
+									</div>
+								</div>
+							</div>
+							<!-- /product end for TROPICLEAN NATURAL FLEA AND TICK FOR PETS-->
+
+							<!-- product for TROPICLEAN NATURAL FLEA AND TICK SHAMPOO MAXIMUM STRENGTH-->
+							<div class="col-md-4 col-xs-6">
+								<div class="product">
+									<div class="product-img">
+										<img src="img/product-tropicleannaturalfleaandtickshampoomaximumstrength.png" alt="">
+										<div class="product-label">
+											<span class="new">NEW</span>
+										</div>
+									</div>
+									<div class="product-body">
+										<p class="product-category">DOG GROOMING AND CARE </p>
+										<h3 class="product-name"><a href="tropicleannaturalfleaandtickshampoomaximumstrength.htm">TROPICLEAN FLEA AND TICK SHAMPOO  <small>MAXIMUM STRENGTH</small></a></h3>
+										<h4 class="product-price">&#8373;50.00</h4>
+										<div class="product-rating">
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star-o"></i>
+										</div>
+										<div class="product-btns">
+											<button class="add-to-compare"><i><small></small></i></button>
+										</div>
+									</div>
+									<div class="add-to-cart">
+										<a href="tropicleannaturalfleaandtickshampoomaximumstrength.htm"><button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> Buy</button></a>
+									</div>
+								</div>
+							</div>
+							<!-- /product end for TROPICLEAN NATURAL FLEA AND TICK SHAMPOO MAXIMUM STRENGTH-->
+
+							<div class="clearfix visible-lg visible-md"></div>
+
+							<!-- product for OATMEAL AND TEA TREE MEDICATED DOG SHAMPOO-->
+							<div class="col-md-4 col-xs-6">
+								<div class="product">
+									<div class="product-img">
+										<img src="img/product-oatmealandteatreemedicateddogshampoo.png" alt="">
+										<div class="product-label">
+											<span class="new">NEW</span>
+										</div>
+									</div>
+									<div class="product-body">
+										<p class="product-category">DOG GROOMING AND CARE </p>
+										<h3 class="product-name"><a href="oatmealandteatreemedicateddogshampoo.htm">OATMEAL AND TEA TREE  <small>MEDICATED DOG SHAMPOO</small></a></h3>
+										<h4 class="product-price">&#8373;60.00</h4>
+										<div class="product-rating">
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star-o"></i>
+										</div>
+										<div class="product-btns">
+											<button class="add-to-compare"><i><small>592ml</small></i></button>
+										</div>
+									</div>
+									<div class="add-to-cart">
+										<a href="oatmealandteatreemedicateddogshampoo.htm"><button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> Buy</button></a>
+									</div>
+								</div>
+							</div>
+							<!-- /product end for OATMEAL AND TEA TREE MEDICATED DOG SHAMPOO -->
+
+
+
+							<!-- product for OXY-MED ANTI-ITCH PET SHAMPOO-->
+							<div class="col-md-4 col-xs-6">
+								<div class="product">
+									<div class="product-img">
+										<img src="img/product-oxymedantiitchpetshampoo.png" alt="">
+										<div class="product-label">
+											<span class="new">NEW</span>
+										</div>
+									</div>
+									<div class="product-body">
+										<p class="product-category">DOG GROOMING AND CARE </p>
+										<h3 class="product-name"><a href="oxymedantiitchpetshampoo.htm">OXY-MED ANTI-ITCH  <small> PET SHAMPOO</small></a></h3>
+										<h4 class="product-price">&#8373;60.00</h4>
+										<div class="product-rating">
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star-o"></i>
+										</div>
+										<div class="product-btns">
+											<button class="add-to-compare"><i><small>592ml</small></i></button>
+										</div>
+									</div>
+									<div class="add-to-cart">
+										<a href="oxymedantiitchpetshampoo.htm"><button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> Buy</button></a>
+									</div>
+								</div>
+							</div>
+							<!-- /product end for OXY-MED ANTI-ITCH PET SHAMPOO-->
+
+							<div class="clearfix visible-sm visible-xs"></div>
+
+
+							<!-- product for SPA LAVISH FRESH PET SHAMPOO-->
+							<div class="col-md-4 col-xs-6">
+								<div class="product">
+									<div class="product-img">
+										<img src="img/product-spalavishfreshpetshampoo.png" alt="">
+										<div class="product-label">
+											<span class="new">NEW</span>
+										</div>
+									</div>
+									<div class="product-body">
+										<p class="product-category">DOG GROOMING AND CARE </p>
+										<h3 class="product-name"><a href="spalavishfreshpetshampoo.htm">SPA LAVISH FRESH  <small> PET SHAMPOO</small></a></h3>
+										<h4 class="product-price">&#8373;0.00</h4>
+										<div class="product-rating">
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star-o"></i>
+										</div>
+										<div class="product-btns">
+											<button class="add-to-compare"><i><small>473ml</small></i></button>
+										</div>
+									</div>
+									<div class="add-to-cart">
+										<a href="spalavishfreshpetshampoo.htm"><button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> Buy</button></a>
+									</div>
+								</div>
+							</div>
+							<!-- /product end for SPA LAVISH FRESH PET SHAMPOO-->
+
+							<div class="clearfix visible-lg visible-md"></div>
+
+							<!-- product for NATURAL FLEA AND TICK SHAMPOO PLUS SOOTHING-->
+							<div class="col-md-4 col-xs-6">
+								<div class="product">
+									<div class="product-img">
+										<img src="img/product-naturalfleaandtickshampooplussoothing.png" alt="">
+										<div class="product-label">
+											<span class="new">NEW</span>
+										</div>
+									</div>
+									<div class="product-body">
+										<p class="product-category">DOG GROOMING AND CARE </p>
+										<h3 class="product-name"><a href="naturalfleaandtickshampooplussoothing.htm">NATURAL FLEA AND TICK SHAMPOO  <small> PLUS SOOTHING</small></a></h3>
+										<h4 class="product-price">&#8373;60.00</h4>
+										<div class="product-rating">
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star-o"></i>
+										</div>
+										<div class="product-btns">
+											<button class="add-to-compare"><i><small>592ml</small></i></button>
+										</div>
+									</div>
+									<div class="add-to-cart">
+										<a href="naturalfleaandtickshampooplussoothing.htm"><button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> Buy</button></a>
+									</div>
+								</div>
+							</div>
+							<!-- /product end for NATURAL FLEA AND TICK SHAMPOO PLUS SOOTHING-->
+
+							<!-- product for BERRY AND COCONUT PET SHAMPOO-->
+							<div class="col-md-4 col-xs-6">
+								<div class="product">
+									<div class="product-img">
+										<img src="img/product-berryandcoconutpetshampoo.png" alt="">
+										<div class="product-label">
+											<span class="new">NEW</span>
+										</div>
+									</div>
+									<div class="product-body">
+										<p class="product-category">DOG GROOMING AND CARE </p>
+										<h3 class="product-name"><a href="berryandcoconutpetshampoo.htm">BERRY AND COCONUT PET SHAMPOO  <small> </small></a></h3>
+										<h4 class="product-price">&#8373;60.00</h4>
+										<div class="product-rating">
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star-o"></i>
+										</div>
+										<div class="product-btns">
+											<button class="add-to-compare"><i><small>592ml</small></i></button>
+										</div>
+									</div>
+									<div class="add-to-cart">
+										<a href="berryandcoconutpetshampoo.htm"><button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> Buy</button></a>
+									</div>
+								</div>
+							</div>
+							<!-- /product end for BERRY AND COCONUT PET SHAMPOO-->
+
+							<!-- product for GENTLE COCONUT PET SHAMPOO-->
+							<div class="col-md-4 col-xs-6">
+								<div class="product">
+									<div class="product-img">
+										<img src="img/product-gentlecoconutpetshampoo.png" alt="">
+										<div class="product-label">
+											<span class="new">NEW</span>
+										</div>
+									</div>
+									<div class="product-body">
+										<p class="product-category">DOG GROOMING AND CARE </p>
+										<h3 class="product-name"><a href="gentlecoconutpetshampoo.htm">GENTLE COCONUT   <small> PET SHAMPOO</small></a></h3>
+										<h4 class="product-price">&#8373;60.00</h4>
+										<div class="product-rating">
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star-o"></i>
+										</div>
+										<div class="product-btns">
+											<button class="add-to-compare"><i><small>592ml</small></i></button>
+										</div>
+									</div>
+									<div class="add-to-cart">
+										<a href="gentlecoconutpetshampoo.htm"><button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> Buy</button></a>
+									</div>
+								</div>
+							</div>
+							<!-- /product end for GENTLE COCONUT PET SHAMPOO-->
+
+							<div class="clearfix visible-lg visible-md"></div>
+
+							<!-- product for AWAPUHI AND COCONUT PET SHAMPOO-->
+							<div class="col-md-4 col-xs-6">
+								<div class="product">
+									<div class="product-img">
+										<img src="img/product-awapuhiandcoconutpetshampoo.png" alt="">
+										<div class="product-label">
+											<span class="new">NEW</span>
+										</div>
+									</div>
+									<div class="product-body">
+										<p class="product-category">DOG GROOMING AND CARE </p>
+										<h3 class="product-name"><a href="awapuhiandcoconutpetshampoo.htm">AWAPUHI AND COCONUT PET SHAMPOO  <small> </small></a></h3>
+										<h4 class="product-price">&#8373;60.00</h4>
+										<div class="product-rating">
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star-o"></i>
+										</div>
+										<div class="product-btns">
+											<button class="add-to-compare"><i><small>592ml</small></i></button>
+										</div>
+									</div>
+									<div class="add-to-cart">
+										<a href="awapuhiandcoconutpetshampoo.htm"><button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> Buy</button></a>
+									</div>
+								</div>
+							</div>
+							<!-- /product end for AWAPUHI AND COCONUT PET SHAMPOO-->
+
+							<!-- product for ALOE AND COCONUT PET SHAMPOO-->
+							<div class="col-md-4 col-xs-6">
+								<div class="product">
+									<div class="product-img">
+										<img src="img/product-aloeandcoconutpetshampoo.png" alt="">
+										<div class="product-label">
+											<span class="new">NEW</span>
+										</div>
+									</div>
+									<div class="product-body">
+										<p class="product-category">DOG GROOMING AND CARE </p>
+										<h3 class="product-name"><a href="aloeandcoconutpetshampoo.htm">ALOE AND COCONUT   <small> PET SHAMPOO </small></a></h3>
+										<h4 class="product-price">&#8373;60.00</h4>
+										<div class="product-rating">
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star-o"></i>
+										</div>
+										<div class="product-btns">
+											<button class="add-to-compare"><i><small>592ml</small></i></button>
+										</div>
+									</div>
+									<div class="add-to-cart">
+										<a href="aloeandcoconutpetshampoo.htm"><button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> Buy</button></a>
+									</div>
+								</div>
+							</div>
+							<!-- /product end for ALOE AND COCONUT PET SHAMPOO-->
+
+							<!-- product for LIME AND COCONUT SHAMPOO-->
+							<div class="col-md-4 col-xs-6">
+								<div class="product">
+									<div class="product-img">
+										<img src="img/product-limeandcoconutpetshampoo.png" alt="">
+										<div class="product-label">
+											<span class="new">NEW</span>
+										</div>
+									</div>
+									<div class="product-body">
+										<p class="product-category">DOG GROOMING AND CARE </p>
+										<h3 class="product-name"><a href="limeandcoconutpetshampoo.htm">LIME AND COCONUT SHAMPOO  </a></h3>
+										<h4 class="product-price">&#8373;60.00</h4>
+										<div class="product-rating">
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star-o"></i>
+										</div>
+										<div class="product-btns">
+											<button class="add-to-compare"><i><small>592ml</small></i></button>
+										</div>
+									</div>
+									<div class="add-to-cart">
+										<a href="limeandcoconutpetshampoo.htm"><button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> Buy</button></a>
+									</div>
+								</div>
+							</div>
+							<!-- /product end for  LIME AND COCONUT SHAMPOO-->
+
+							<!-- product for NEEM AND CITRUS DOG SHAMPOO-->
+							<div class="col-md-4 col-xs-6">
+								<div class="product">
+									<div class="product-img">
+										<img src="img/product-neemandcitrusdogshampoo.png" alt="">
+										<div class="product-label">
+											<span class="new">NEW</span>
+										</div>
+									</div>
+									<div class="product-body">
+										<p class="product-category">DOG GROOMING AND CARE </p>
+										<h3 class="product-name"><a href="neemandcitrusdogshampoo.htm">NEEM AND CITRUS DOG SHAMPOO<small>  </small></a></h3>
+										<h4 class="product-price">&#8373;60.00</h4>
+										<div class="product-rating">
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star-o"></i>
+										</div>
+										<div class="product-btns">
+											<button class="add-to-compare"><i><small>592ml</small></i></button>
+										</div>
+									</div>
+									<div class="add-to-cart">
+										<a href="neemandcitrusdogshampoo.htm"><button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> Buy</button></a>
+									</div>
+								</div>
+							</div>
+							<!-- /product end for  NEEM AND CITRUS DOG SHAMPOO-->
+
+							<!-- product for BABY POWDER PET SPRAY-->
+							<div class="col-md-4 col-xs-6">
+								<div class="product">
+									<div class="product-img">
+										<img src="img/product-babypowderpetspray.png" alt="">
+										<div class="product-label">
+											<span class="new">NEW</span>
+										</div>
+									</div>
+									<div class="product-body">
+										<p class="product-category">DOG GROOMING AND CARE </p>
+										<h3 class="product-name"><a href="babypowderpetspray.htm">BABY POWDER PET SPRAY<small>  </small></a></h3>
+										<h4 class="product-price">&#8373;50.00</h4>
+										<div class="product-rating">
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star-o"></i>
+										</div>
+										<div class="product-btns">
+											<button class="add-to-compare"><i><small>236ml</small></i></button>
+										</div>
+									</div>
+									<div class="add-to-cart">
+										<a href="babypowderpetspray.htm"><button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> Buy</button></a>
+									</div>
+								</div>
+							</div>
+							<!-- /product end for  BABY POWDER PET SPRAY-->
+
+							<!-- product for TANGLE REMOVER-->
+							<div class="col-md-4 col-xs-6">
+								<div class="product">
+									<div class="product-img">
+										<img src="img/product-tangleremover.png" alt="">
+										<div class="product-label">
+											<span class="new">NEW</span>
+										</div>
+									</div>
+									<div class="product-body">
+										<p class="product-category">DOG GROOMING AND CARE </p>
+										<h3 class="product-name"><a href="tangleremover.htm">TANGLE REMOVER<small>  </small></a></h3>
+										<h4 class="product-price">&#8373;50.00</h4>
+										<div class="product-rating">
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star-o"></i>
+										</div>
+										<div class="product-btns">
+											<button class="add-to-compare"><i><small>473ml</small></i></button>
+										</div>
+									</div>
+									<div class="add-to-cart">
+										<a href="tangleremover.htm"><button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> Buy</button></a>
+									</div>
+								</div>
+							</div>
+							<!-- /product end for  TANGLE REMOVER-->
+
+							<div class="clearfix visible-lg visible-md"></div>
+
+							<!-- product for KIWI AND COCOA BUTTER -->
+							<div class="col-md-4 col-xs-6">
+								<div class="product">
+									<div class="product-img">
+										<img src="img/product-kiwiandcocoabutter.png" alt="">
+										<div class="product-label">
+											<span class="new">NEW</span>
+										</div>
+									</div>
+									<div class="product-body">
+										<p class="product-category">DOG GROOMING AND CARE </p>
+										<h3 class="product-name"><a href="kiwiandcocoabutter.htm">KIWI AND COCOA BUTTER <small>  </small></a></h3>
+										<h4 class="product-price">&#8373;60.00</h4>
+										<div class="product-rating">
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star-o"></i>
+										</div>
+										<div class="product-btns">
+											<button class="add-to-compare"><i><small>592ml</small></i></button>
+										</div>
+									</div>
+									<div class="add-to-cart">
+										<a href="kiwiandcocoabutter.htm"><button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> Buy</button></a>
+									</div>
+								</div>
+							</div>
+							<!-- /product end for KIWI AND COCOA BUTTER  -->
+
+							<!-- product for LIME AND COCOA BUTTER -->
+							<div class="col-md-4 col-xs-6">
+								<div class="product">
+									<div class="product-img">
+										<img src="img/product-limeandcocoabutter.png" alt="">
+										<div class="product-label">
+											<span class="new">NEW</span>
+										</div>
+									</div>
+									<div class="product-body">
+										<p class="product-category">DOG GROOMING AND CARE </p>
+										<h3 class="product-name"><a href="limeandcocoabutter.htm"> LIME AND COCOA BUTTER<small>  </small></a></h3>
+										<h4 class="product-price">&#8373;60.00</h4>
+										<div class="product-rating">
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star-o"></i>
+										</div>
+										<div class="product-btns">
+											<button class="add-to-compare"><i><small>592ml</small></i></button>
+										</div>
+									</div>
+									<div class="add-to-cart">
+										<a href="limeandcocoabutter.htm"><button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> Buy</button></a>
+									</div>
+								</div>
+							</div>
+							<!-- /product end for LIME AND COCOA BUTTER -->
+
+							<!-- product for PAPAYA AND COCONUT LUXURY 2-IN-1-->
+							<div class="col-md-4 col-xs-6">
+								<div class="product">
+									<div class="product-img">
+										<img src="img/product-papayaandcoconutluxury.png" alt="">
+										<div class="product-label">
+											<span class="new">NEW</span>
+										</div>
+									</div>
+									<div class="product-body">
+										<p class="product-category">DOG GROOMING AND CARE </p>
+										<h3 class="product-name"><a href="papayaandcoconutluxury.htm"> PAPAYA & COCONUT LUXURY <small> 2-IN-1  </small></a></h3>
+										<h4 class="product-price">&#8373;60.00</h4>
+										<div class="product-rating">
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star-o"></i>
+										</div>
+										<div class="product-btns">
+											<button class="add-to-compare"><i><small>592ml</small></i></button>
+										</div>
+									</div>
+									<div class="add-to-cart">
+										<a href="papayaandcoconutluxury.htm"><button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> Buy</button></a>
+									</div>
+								</div>
+							</div>
+							<!-- /product end for PAPAYA AND COCONUT LUXURY 2-IN-1-->
+
+							<div class="clearfix visible-lg visible-md visible-sm visible-xs"></div>
+
+
+						</div>
+						<!-- /store products -->
+
+
+
+
+						<!-- store bottom filter -->
+				<!--		<div class="store-filter clearfix">
+							<span class="store-qty">Showing 20-100 products</span>
+							<ul class="store-pagination">
+								<li class="active">1</li>
+								<li><a href="#">2</a></li>
+								<li><a href="#">3</a></li>
+								<li><a href="#">4</a></li>
+								<li><a href="#"><i class="fa fa-angle-right"></i></a></li>
+							</ul>
+						</div> -->
+						<!-- /store bottom filter -->
+					</div>
+					<!-- /STORE -->
+				</div>
+				<!-- /row -->
+			</div>
+			<!-- /container -->
+		</div>
+		<!-- /SECTION -->
+
+		<!-- NEWSLETTER -->
+		<div id="newsletter" class="section">
+			<!-- container -->
+			<div class="container">
+				<!-- row -->
+				<div class="row">
+					<div class="col-md-12">
+						<div class="newsletter">
+							<p>Sign Up for the <strong>NEWSLETTER</strong></p>
+							<form>
+								<input class="input" type="email" placeholder="Enter Your Email">
+								<button class="newsletter-btn"><i class="fa fa-envelope"></i> Subscribe</button>
+							</form>
+							<ul class="newsletter-follow">
+								<li>
+									<a href="#"><i class="fa fa-facebook"></i></a>
+								</li>
+								<li>
+									<a href="#"><i class="fa fa-twitter"></i></a>
+								</li>
+								<li>
+									<a href="#"><i class="fa fa-instagram"></i></a>
+								</li>
+								<li>
+									<a href="#"><i class="fa fa-pinterest"></i></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- /row -->
+			</div>
+			<!-- /container -->
+		</div>
+		<!-- /NEWSLETTER -->
+
+		<!-- FOOTER -->
+		<div w3-include-html="inc/footerr.html">
+
+		</div>
+		<!-- /FOOTER -->
+
+		<!-- jQuery Plugins -->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/slick.min.js"></script>
+		<script src="js/nouislider.min.js"></script>
+		<script src="js/jquery.zoom.min.js"></script>
+		<script src="js/main.js"></script>
+
+		<script type="text/javascript" src="js/modal.js">
+
+
+		</script>
+
+		<script>
+		includeHTML();
+		</script>
+
+	</body>
+</html>
